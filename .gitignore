@@ -1,2 +1,12 @@
-*.class
+.project
+.classpath
+.settings
+.sonar
+.scannerwork
+/bin
+target/
+.idea/
 *.log
+metastore_db/
+*.db
+.class
