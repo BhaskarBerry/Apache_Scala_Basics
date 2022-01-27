@@ -1,5 +1,8 @@
 package com.berry.training.scala.basics
 
+/**
+Scala has a built-in implicit conversion from java.lang.String to scala.runtime.RichString
+*/
 object stringOps extends App {
   val str: String = "Hello, I am learning scala"
 
@@ -7,19 +10,19 @@ object stringOps extends App {
   println(str.substring(7, 17))
   println(str.split(" ").toList)
   println(str.startsWith("Hello"))
-  println(str.replace(" ", "__"))
+  println(str.replace(" ", "_"))
   println(str.toLowerCase())
-  println(str.length)
+  println("Length of str: " ,str.length)
 
-  val anumString = "45"
-  val aNUmber = anumString.toInt
-  println('a' +: anumString :+ 'z') // prepending and appending operator are scala specific
+  val numString = "45"
+  val aNumber = numString.toInt
+  println('a' +: numString :+ 'z') // prepending and appending operator are scala specific
   println(str.reverse)
   println(str.take(4))
 
-  //Scala specific : String Interpolators
+  //Scala specific : String Interpolator
 
-  // S- interpolators
+  // S - Interpolator
   val name = "Berry"
   val age = 30
   val greet = s"Hello $name and $age"
@@ -28,7 +31,7 @@ object stringOps extends App {
   println(greet)
   println(greet1)
 
-  //f-interpolators
+  //f-Interpolator
   val speed = 1.2f
   val myth = f"$name can eat $speed%2.2f burgers per minute"
   printf(myth)
