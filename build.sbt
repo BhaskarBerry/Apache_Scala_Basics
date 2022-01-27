@@ -1,4 +1,4 @@
-name := "scala-basics"
+name := "Apache_scala_basics"
 
 version := "0.1"
 
