@@ -1,4 +1,4 @@
-package training.com.berry.basics
+package com.berry.training.scala.basics
 
 object stringOps extends App {
   val str: String = "Hello, I am learning scala"

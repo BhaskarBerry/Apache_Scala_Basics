@@ -1,4 +1,4 @@
-package training.com.berry.basics
+package com.berry.training.scala.basics
 
 object DefaultArgs extends App {
 

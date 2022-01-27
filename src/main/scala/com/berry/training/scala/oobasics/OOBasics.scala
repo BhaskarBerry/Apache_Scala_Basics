@@ -1,4 +1,4 @@
-package training.com.berry.oobasics
+package com.berry.training.scala.oobasics
 
 object OOBasics extends App {
 

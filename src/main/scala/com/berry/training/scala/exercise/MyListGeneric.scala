@@ -1,4 +1,4 @@
-package exercise
+package com.berry.training.scala.exercise
 
 abstract class MyListGeneric[+A] {
   /*

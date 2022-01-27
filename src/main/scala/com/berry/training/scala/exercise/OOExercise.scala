@@ -1,4 +1,4 @@
-package exercise
+package com.berry.training.scala.exercise
 
 /*
 1. Generic trait MyPredicate[-T] with a little method test (t) ==> Boolean

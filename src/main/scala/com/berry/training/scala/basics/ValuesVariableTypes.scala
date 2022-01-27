@@ -1,4 +1,4 @@
-package training.com.berry.basics
+package com.berry.training.scala.basics
 
 object ValuesVariableTypes extends App {
   val x = 43
