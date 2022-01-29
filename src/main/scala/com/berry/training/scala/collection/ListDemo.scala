@@ -25,10 +25,10 @@ object ListDemo extends App {
   println(listSample.mkString("-"))
   println(listSample.reduceLeft((next, cumm) => cumm + next))
 
-  for (i <- listSample)print(i)
+  for (i <- listSample) print(i)
 
-  val res =  for (i <- listSample) yield i+2
+  val res = for (i <- listSample) yield i + 2
 
- val evenNum = for (i <- listSample ; if (i % 2 == 0)) yield i
-  println("\n"+evenNum)
+  val evenNum = for (i <- listSample; if (i % 2 == 0)) yield i
+  println("\n" + evenNum)
 }
