@@ -29,4 +29,10 @@ object TupleDemo extends App {
   // Equals Check
   println(t.canEqual(t3))
   println(2->"other way to create a tuple")
+
+  //Operations on Tuple
+  val sampleTuple = (4,3,2,1)
+  val sum = sampleTuple._1 + sampleTuple._2 + sampleTuple._3 + sampleTuple._4
+  println("Sum of Elements:" +sum)
+
 }
