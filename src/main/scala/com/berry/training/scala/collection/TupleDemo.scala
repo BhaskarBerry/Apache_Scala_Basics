@@ -7,6 +7,11 @@ package com.berry.training.scala.collection
  *
  *  There is an upper limit of 22 for the element in the tuple in the scala, if you need more elements,
  *  then you can use a collection, not a tuple
+ *
+ *  1. Iterating over Tuple
+ *  2. swapping of tuple element
+ *  3. Converting tuple to string
+ *
  **/
 object TupleDemo extends App {
 

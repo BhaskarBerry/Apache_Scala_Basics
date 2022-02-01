@@ -1,6 +1,15 @@
 # Apache Scala Basics
 Covered Scala Basic Concepts 
 
+##Scala-Collection
+    > Lists
+    > Sets
+    > Tuples
+    > Maps
+    > Options
+    > Iterators
+
+
 #Resource Links
 ""
 https://daily-scala.blogspot.com/2009/08/basic-matching.html
