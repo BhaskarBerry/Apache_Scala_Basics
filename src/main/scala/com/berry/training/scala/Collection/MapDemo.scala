@@ -1,4 +1,4 @@
-package com.berry.training.scala.collection
+package com.berry.training.scala.Collection
 
 /**
  * A Map in Scala is a collection of key-value pairs, and is also called a hash table. We can use a key to access a value.

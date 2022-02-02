@@ -1,4 +1,4 @@
-package com.berry.training.scala.collection
+package com.berry.training.scala.Collection
 
 /**
  * A list of Scala Collections is much like a Scala array.
