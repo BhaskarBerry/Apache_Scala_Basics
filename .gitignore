@@ -12,3 +12,5 @@ metastore_db/
 .class
 /.bsp/
 /.idea/
+.idea/*
+

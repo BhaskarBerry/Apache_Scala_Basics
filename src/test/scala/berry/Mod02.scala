@@ -36,6 +36,8 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
     numNames2.length should be (3)
 
     (numNames == numNames2) should be (false)
+    // Why? Because the underlying implementation for Array is Java and uses Java's .equals method
+    // for arrays - if you want to test array equality in scala, you can use
     (numNames.deep == numNames2.deep) should be (true)
     (numNames sameElements numNames2) should be (true)
   }
@@ -67,7 +69,7 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
 
     def concatListsToArray(l1 : List[Int], l2 : List[Int]) : Array[Int] = {
       // replace this with the correct implementation
-      Array(0)
+      (l1++l2).toArray // or you could use :::
     }
 
     val oneTwo = List(1,2)
@@ -79,7 +81,7 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
   test ("Take two arrays, and concatenate them in a list") {
     def concatArraysToList(a1 : Array[Int], a2 : Array[Int]) : List[Int] = {
       // replace this with the correct implementation
-      List(0)
+      (a1 ++ a2).toList
     }
 
     val oneTwo = Array(1,2)
@@ -109,7 +111,7 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
 
     // replace the following with the correct code to convert tuple t
     // to a list of strings
-    val l = Nil
+    val l = List(t._1.toString, t._2.toString, t._3.toString, t._4.toString, t._5)
 
     l should be (List("0", "u", "8", "1", "too"))
   }
@@ -118,6 +120,7 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
     var getSet = Set("Ready", "Steady")
 
     // Add a line below to satisfy the test
+    getSet += "Go!"
 
     getSet should be (Set("Ready", "Steady", "Go!"))
 
@@ -128,7 +131,7 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
     var getSet = scala.collection.mutable.Set("Ready", "Steady")
 
     // Add a line below to satisfy the test
-
+    getSet += "Go!"
     getSet should be (Set("Ready", "Steady", "Go!"))
 
     // what happens if you make the var a val above? Why? Is this a good idea?
@@ -145,11 +148,11 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
 
     mutMap += (2 -> "Two")
 
-    mutMap(2) should be ("Dos","Two")
+    mutMap(2) should be ("Two")
 
     // What happens if you uncomment the line below? Why?
     mutMap += (2 -> "2")
-    mutMap(2) should be ("Dos","Two" ,"2")
+    mutMap(2) should be ("2")
   }
 
   test ("Mutable map in a val") {
@@ -167,11 +170,11 @@ class Mod02  extends testSuite with Matchers with SeveredStackTraces {
 
     mutMap += (2 -> "Deux")
 
-    mutMap(2) should be ("Two", "Deux")
+    mutMap(2) should be ("Deux")
 
     // What happens if you uncomment the line below? Why?
     mutMap += (2 -> "2")
-    mutMap(2) should be ("Two", "Deux", "2")
+    mutMap(2) should be ("2")
   }
 
 }

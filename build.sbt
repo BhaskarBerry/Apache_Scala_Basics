@@ -1,10 +1,10 @@
 name := "scala_basics"
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
-scalaVersion := "2.12.17"
+scalaVersion := "2.12.6"
 
-scalacOptions in ThisBuild += "-deprecation"
+//scalacOptions in ThisBuild += "-deprecation"
 
 libraryDependencies in ThisBuild ++= Seq(
   "org.scalactic"  %% "scalactic"  % "3.0.4",
