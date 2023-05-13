@@ -10,3 +10,5 @@ target/
 metastore_db/
 *.db
 .class
+/.bsp/
+/.idea/

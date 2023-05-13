@@ -2,5 +2,8 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="Apache_scala_basics,scala-basics,scala-basics_5585" />
+    <profile name="sbt 2" modules="scala_basics">
+      <option name="deprecationWarnings" value="true" />
+    </profile>
   </component>
 </project>
