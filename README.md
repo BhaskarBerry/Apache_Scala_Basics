@@ -9,6 +9,10 @@ Covered Scala Basic Concepts
     > Options
     > Iterators
 
+##Scala-Advanced Concepts
+		> Traits - Multiple Inheritance 
+		> Hierarchy, Types and Options
+
 
 #Resource Links
 ""
