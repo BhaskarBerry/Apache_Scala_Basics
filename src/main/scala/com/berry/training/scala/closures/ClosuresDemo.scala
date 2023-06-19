@@ -1,4 +1,4 @@
-package com.berry.training.scala.Closures
+package com.berry.training.scala.closures
 
 /**
  * A function whose return value depends on variable(s) declared outside it, is a closure. This is much like that in Python.

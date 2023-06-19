@@ -1,4 +1,4 @@
-package com.berry.training.scala.Arrays
+package com.berry.training.scala.arrays
 
 /**
  * Given an integer array arr of size n, you need to sum the elements of arr.

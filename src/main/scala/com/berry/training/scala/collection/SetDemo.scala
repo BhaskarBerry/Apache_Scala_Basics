@@ -1,4 +1,4 @@
-package com.berry.training.scala.Collection
+package com.berry.training.scala.collection
 
 /**
  * Sets in Scala Collections

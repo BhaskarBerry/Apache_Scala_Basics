@@ -1,4 +1,4 @@
-package com.berry.training.scala.ATVsParameters
+package com.berry.training.scala.atvsParameters
 
 /**
  * A class/trait with an abstract type is quite similar to a class/trait type parameter. 

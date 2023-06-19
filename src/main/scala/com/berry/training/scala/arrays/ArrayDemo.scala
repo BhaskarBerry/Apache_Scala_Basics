@@ -1,4 +1,4 @@
-package com.berry.training.scala.Arrays
+package com.berry.training.scala.arrays
 
 /**
  * When we want to hold a number of elements of the same kind in a collection, we use an array.

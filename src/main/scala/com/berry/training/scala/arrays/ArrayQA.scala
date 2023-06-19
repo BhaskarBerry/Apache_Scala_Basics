@@ -1,4 +1,4 @@
-package com.berry.training.scala.Arrays
+package com.berry.training.scala.arrays
 
 object ArrayQA extends App {
 

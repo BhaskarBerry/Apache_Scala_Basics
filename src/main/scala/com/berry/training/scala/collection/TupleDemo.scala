@@ -1,4 +1,4 @@
-package com.berry.training.scala.Collection
+package com.berry.training.scala.collection
 
 /**
  * A tuple is a Scala collection which can hold multiple values of same or different type together
